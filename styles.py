@@ -1,4 +1,3 @@
-# styles.py
 STYLESHEET = """
 QWidget {
     font-family: 'Segoe UI', Arial, sans-serif; /* A modern, common font */
@@ -43,9 +42,8 @@ QPushButton:pressed {
     background-color: #004578; /* Even darker blue when pressed */
 }
 
-/* Specific button styles */
-QPushButton#dangerButton { /* Example if you wanted a specific danger button */
-    background-color: #d9534f; /* Red for danger/delete */
+QPushButton#dangerButton { 
+    background-color: #d9534f; 
 }
 QPushButton#dangerButton:hover {
     background-color: #c9302c;
@@ -54,8 +52,8 @@ QPushButton#dangerButton:pressed {
     background-color: #ac2925;
 }
 
-QPushButton#successButton { /* Used for the "Add Transaction" button */
-    background-color: #5cb85c; /* Green for success/add */
+QPushButton#successButton { 
+    background-color: #5cb85c; 
 }
 QPushButton#successButton:hover {
     background-color: #4cae4c;
@@ -67,97 +65,83 @@ QPushButton#successButton:pressed {
 
 QTableWidget {
     border: 1px solid #e0e0e0;
-    gridline-color: #e0e0e0; /* Lighter grid lines */
+    gridline-color: #e0e0e0; 
     background-color: #ffffff;
-    alternate-background-color: #f9f9f9; /* Zebra striping */
-    selection-background-color: #a6d8ff; /* Light blue selection */
-    selection-color: #000000; /* Text color when selected */
+    alternate-background-color: #f9f9f9; 
+    selection-background-color: #a6d8ff; 
+    selection-color: #000000; 
 }
 
 QTableWidget::item {
-    padding: 5px; /* Padding within each cell */
+    padding: 5px; 
 }
 
 QHeaderView::section {
-    background-color: #e9ecef; /* Light grey for headers */
+    background-color: #e9ecef; 
     padding: 6px;
     border: 1px solid #d0d0d0;
     font-weight: bold;
 }
 
-/* --- CORRECTED QGroupBox STYLING --- */
 QGroupBox {
-    font-weight: bold; /* Applies to the title by default */
+    font-weight: bold; 
     border: 1px solid #d0d0d0;
     border-radius: 5px;
-    margin-top: 25px;  /* This is the height of the area where the title will be drawn.
-                          The content of the QGroupBox will start BELOW this margin.
-                          Adjust this value if your font size or title padding changes significantly.
-                          (Approx. title height + a little extra space) */
-    padding-top: 8px;  /* This adds space INSIDE the groupbox, below the title area
-                          and above the actual content widgets. This pushes the content down. */
-    background-color: #fafafa; /* Slightly off-white groupbox background */
+    margin-top: 25px;  
+    padding-top: 8px;  
+    background-color: #fafafa; 
 }
 
 QGroupBox::title {
-    subcontrol-origin: margin; /* The title is placed in the margin area of the QGroupBox. */
-    subcontrol-position: top left; /* Specifically, at the top-left of this margin area. */
-    left: 10px;          /* Small horizontal offset for aesthetics from the left edge. */
-    /* The 'top' property for subcontrol-position is relative to the margin area itself.
-       If margin-top is 25px, the title element (which is roughly 25px high due to its
-       own font and padding) will fit within this. */
-
-    padding: 5px 10px;   /* Padding *around* the text of the title itself.
-                            This contributes to the overall height of the title element.
-                            Approx title height = 5px (top pad) + 11pt font (~15px) + 5px (bottom pad) = ~25px.
-                            This should fit within the QGroupBox's margin-top of 25px. */
-    background-color: #e9ecef; /* Match header style */
+    subcontrol-origin: margin; 
+    subcontrol-position: top left; 
+    left: 10px;          
+    padding: 5px 10px;   
+    background-color: #e9ecef; 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: 1px solid #d0d0d0; /* Line below the title */
-    color: #333; /* Ensure title text color, overriding general QWidget if needed */
+    border-bottom: 1px solid #d0d0d0; 
+    color: #333; 
 }
-/* --- END QGroupBox STYLING CORRECTION --- */
 
-QLabel#titleLabel { /* For the main application title "My Personal Budget" */
+QLabel#titleLabel { 
     font-size: 18pt;
     font-weight: bold;
-    color: #005a9e; /* Darker blue for titles */
-    padding-bottom: 10px; /* Space below the main title */
+    color: #005a9e; 
+    padding-bottom: 10px; 
 }
 
-QLabel#balanceLabelPositive { /* For the balance label when positive */
+QLabel#balanceLabelPositive { 
     font-size: 14pt;
     font-weight: bold;
-    color: #28a745; /* Green for positive balance */
+    color: #28a745; 
 }
 
-QLabel#balanceLabelNegative { /* For the balance label when negative */
+QLabel#balanceLabelNegative { 
     font-size: 14pt;
     font-weight: bold;
-    color: #dc3545; /* Red for negative balance */
+    color: #dc3545; 
 }
 
-QLabel#infoLabel { /* For the tip label at the bottom */
+QLabel#infoLabel { 
     font-style: italic;
-    color: #666; /* Lighter grey for less emphasis */
-    padding-top: 5px; /* A bit of space above it */
+    color: #666; 
+    padding-top: 5px; 
 }
 
-/* Styles for QMenu (Context Menu) - Optional, but can improve consistency */
 QMenu {
     background-color: #ffffff;
     border: 1px solid #c0c0c0;
-    padding: 5px; /* Padding around menu items */
+    padding: 5px; 
 }
 
 QMenu::item {
-    padding: 5px 20px 5px 20px; /* Top, Right, Bottom, Left padding for menu items */
-    border-radius: 3px; /* Slight rounding for items */
+    padding: 5px 20px 5px 20px; 
+    border-radius: 3px; 
 }
 
 QMenu::item:selected {
-    background-color: #0078d7; /* Blue selection, matches button */
+    background-color: #0078d7; 
     color: white;
 }
 

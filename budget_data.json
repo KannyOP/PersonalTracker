@@ -2,19 +2,25 @@
     {
         "date": "2025-06-01",
         "type": "Income",
-        "description": "Salary",
-        "amount": 600.0
+        "description": "ხელფასი",
+        "amount": 1500.0
     },
     {
         "date": "2025-06-01",
         "type": "Expense",
-        "description": "Taxes",
-        "amount": 120.0
+        "description": "სურსათი",
+        "amount": 200.0
     },
     {
         "date": "2025-06-01",
         "type": "Expense",
-        "description": "Rent",
-        "amount": 300.0
+        "description": "კომუნალური",
+        "amount": 250.0
+    },
+    {
+        "date": "2025-06-01",
+        "type": "Expense",
+        "description": "ქირა",
+        "amount": 800.0
     }
 ]
