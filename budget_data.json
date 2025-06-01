@@ -1,0 +1,20 @@
+[
+    {
+        "date": "2025-06-01",
+        "type": "Income",
+        "description": "Salary",
+        "amount": 600.0
+    },
+    {
+        "date": "2025-06-01",
+        "type": "Expense",
+        "description": "Taxes",
+        "amount": 120.0
+    },
+    {
+        "date": "2025-06-01",
+        "type": "Expense",
+        "description": "Rent",
+        "amount": 300.0
+    }
+]
